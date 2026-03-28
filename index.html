@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<my>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    /* עיצוב כללי - לילך ופונט מעוגל */
+    @import url('https://fonts.googleapis.com');
+
+    .main-wrapper {
+        background-color: #f8f0ff; /* רקע לילך בהיר מאוד */
+        font-family: 'Comfortaa', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .glass-card {
+        background: white;
+        padding: 40px;
+        border-radius: 45px; /* עיגול נשי ורך */
+        box-shadow: 0 15px 35px rgba(200, 150, 255, 0.2);
+        width: 100%;
+        max-width: 380px;
+        text-align: center;
+        border: 1px solid #f3e5f5;
+    }
+
+    h2 {
+        color: #8e24aa;
+        font-size: 22px;
+        margin-bottom: 5px;
+        letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+        color: #ba68c8;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    /* תיבות הזנה מסוגננות */
+    .input-group {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        margin-left: 15px;
+        font-size: 13px;
+        color: #9c27b0;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 16px;
+        border: 2px solid #f3e5f5;
+        border-radius: 25px; /* תיבות מעוגלות */
+        background-color: #faf5ff;
+        font-family: 'Comfortaa', cursive;
+        color: #4a148c;
+        outline: none;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #e1bee7;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(225, 190, 231, 0.4);
+    }
+
+    /* כפתור עגול ועדין */
+    .submit-btn {
+        background: linear-gradient(135deg, #e1bee7 0%, #ce93d8 100%);
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 30px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 0 4px 15px rgba(206, 147, 216, 0.3);
+        transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(206, 147, 216, 0.5);
+    }
+</style>
+
+<div class="main-wrapper">
+    <div class="glass-card">
+        <h2>WELCOME TO <span style="color: #ab47bc;">DiscReview</span> 😎</h2>
+        <p class="subtitle">נשמח לקרוא את מה שיש לך לומר</p>
+
+        <form action="/submit" method="POST">
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="איך קוראים לך?" required>
+            </div>
+
+            <div class="input-group">
+                <label>Age</label>
+                <input type="number" name="age" placeholder="בת כמה את?" min="14" max="120" required>
+            </div>
+
+            <div class="input-group">
+                <label>Review</label>
+                <textarea name="review" rows="4" placeholder="כתבי כאן..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Review ✨</button>
+        </form>
+    </div>
+</div>
+</div>
+</form>
+</body>
+</html>
