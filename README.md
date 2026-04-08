@@ -1,23 +1,44 @@
-# 🚀 Flask Review System with Discord Integration
+# <p align="center">🌸 Flask Review System & Discord Integration</p>
 
-A professional Flask-based web application that collects user reviews, stores them in a local **SQLite** database, and instantly broadcasts them to a **Discord** channel using Webhooks.
+<p align="center">
+  <img src="https://shields.io" />
+  <img src="https://shields.io" />
+  <img src="https://shields.io" />
+  <img src="https://shields.io" />
+</p>
 
-## ✨ Key Features
-- **User Interface:** Clean HTML forms for collecting Name, Age, and Review data.
-- **Real-time Notifications:** Automated message delivery to Discord via Webhooks.
-- **Database Management:** Secure data persistence using SQLite with timestamps.
-- **Smart Validation:** Built-in logic to verify user age (14+) before processing.
-- **Live API Endpoint:** A `/recent_messages` route that serves the last 30 minutes of data as JSON.
+> [!IMPORTANT]
+> **A refined web application** designed to collect user feedback and broadcast it instantly to Discord. Built with a focus on clean code and seamless integration.
 
-## 🛠️ Tech Stack
-- **Backend:** Python 3.x, Flask
-- **Database:** SQLite3
-- **Communication:** Requests (Discord Webhook API)
-- **Security:** Python-dotenv (Environment Variables management)
+## ✨ Highlights
 
-## 📦 Getting Started
+> [!TIP]
+> *   **Elegant Interface** – Minimalist HTML forms designed for a smooth user experience.
+> *   **Real-time Sync** – Instant delivery to Discord channels using secure Webhooks.
+> *   **Smart Storage** – Reliable SQLite database management with automated timestamps.
+> *   **Validation Logic** – Built-in age verification (14+) to ensure data quality.
+> *   **Live Data Access** – A dedicated JSON endpoint for the most recent 30 minutes of activity.
 
-### 1. Clone the repository
+## 🛠 Tech Stack
+
+
+| Category | Technology | Color Tag |
+| :--- | :--- | :--- |
+| **Core** | Python & Flask | ![Python](https://shields.io) |
+| **Data** | SQLite3 | ![DB](https://shields.io) |
+| **API** | Discord Webhooks | ![API](https://shields.io) |
+| **Security** | Python-dotenv | ![Security](https://shields.io) |
+
+## 🎀 Getting Started
+
+> [!NOTE]
+> **1. Clone the project**  
+> `git clone https://github.com`
+
+**2. Setup environment**  
+Install requirements and create a `.env` file with your `DISCORD_WEBHOOK_URL`.
+
+**3. Launch**  
 ```bash
-git clone https://github.com
-cd YOUR_REPO_NAME
+pip install -r requirements.txt
+python app.py
