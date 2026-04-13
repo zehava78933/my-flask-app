@@ -8,7 +8,13 @@ A refined web application designed to collect user feedback and broadcast it ins
 *   **Real-time Sync** – Instant delivery to Discord channels using secure Webhooks.
 *   **Smart Storage** – Reliable SQLite database management with automated timestamps.
 *   **Validation Logic** – Built-in age verification (14+) to ensure data quality.
-*   **Live Data Access** – A dedicated JSON endpoint for the most recent 30 minutes of activity.
+*   **Live Data Access** – A dedicated JSON endpoint for the most recent activity.
+
+## 📸 Visual Preview
+
+> [!NOTE]
+> **User Interface:** The application features a clean, user-friendly home page for submitting reviews.  
+> You can view the interface screenshot here: `img.png`
 
 ## 🛠 Tech Stack
 
@@ -25,5 +31,10 @@ A refined web application designed to collect user feedback and broadcast it ins
 **2. Setup environment**  
 Install requirements and create a `.env` file with your `DISCORD_WEBHOOK_URL`.
 
-**3. Launch**  
-Run `python app.py` and visit `localhost:5000` to see it in action.
+**3. Initialize Database**  
+Run the database script once to create your local tables:  
+`python db_2.py`
+
+**4. Launch**  
+Start the server and visit the app at `localhost:5000`:  
+`python main_p.py`
