@@ -1,3 +1,5 @@
-giflask
+flask
 requests
 python-dotenv
+sqlite3
+os
